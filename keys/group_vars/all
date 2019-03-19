@@ -3,4 +3,4 @@
 
 itemu:
       user: aparsons
-      password: "{{ 'dragon22' | password_hash('sha512') }}"
+      password: "{{ 'yourpasswordhere' | password_hash('sha512') }}"
