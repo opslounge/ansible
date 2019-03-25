@@ -1,0 +1,25 @@
+---
+ - hosts: all
+   connection: local
+
+
+   tasks: 
+    - name: install open-vm-tools
+      yum:
+       name: open-vm-tools
+       state: present
+
+    - name: install gcc
+      yum:
+       name: gcc
+       state: present
+
+    - name: install gcc
+      yum:
+       name: python-devel
+       state: present
+    
+    - name: install git
+      yum:
+       name: git
+       state: latest   
